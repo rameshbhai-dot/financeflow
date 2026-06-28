@@ -4,13 +4,7 @@
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Global Error Handler to debug hidden issues on the user's screen
-  window.addEventListener('error', function(e) {
-    alert('JavaScript Error: ' + e.message + '\nFile: ' + e.filename + ':' + e.lineno);
-  });
-  window.addEventListener('unhandledrejection', function(e) {
-    alert('Promise Error: ' + (e.reason && e.reason.message ? e.reason.message : e.reason));
-  });
+  // Errors are logged to console only (no pop-ups)
 
   // ==========================================
   // Theme Toggle (Dark / Light Mode)
